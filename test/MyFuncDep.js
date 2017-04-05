@@ -1,4 +1,5 @@
 var myFuncDep = {
+
     magicValue: function () {
         return 10;
     }
