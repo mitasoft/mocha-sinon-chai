@@ -23,13 +23,11 @@ describe.only('| suite 5 mocks |', function () {
         myClassMock.restore();
     });
 
-    it.only('should call MyClass.add method only once with match', function () {
+    it('should call MyClass.add method only once with match', function () {
         var spyAdd = sinon.spy(MyClass.prototype, 'add');
-       
+
         var myProto = new MyProto();
         var result = myProto.calc();
-
-        console.log('Result is ' + result);
 
         expect(spyAdd.called).equal(true);
         expect(spyAdd.calledWith(sinon.match.number, 2)).equal(true);

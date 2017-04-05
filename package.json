@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/test2.js"
+    "test": "mocha ./test/test.timers.js"
   },
   "author": "",
   "license": "ISC",
