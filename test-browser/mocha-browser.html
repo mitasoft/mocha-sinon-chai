@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link href="node_modules/mocha/mocha.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="mocha"></div>
+
+  <div id="ccc"></div>
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <!--<script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>-->
+  <script src="node_modules/mocha/mocha.js"></script>
+  <script src="node_modules/chai/chai.js"></script>
+  <script src="node_modules/sinon-browser-only/sinon.js"></script>
+
+  <script>mocha.setup('bdd')</script>
+  <script src="models.js"></script>  
+  <script src="test.demo.js"></script>
+  <script src="test.timer.js"></script>
+  <!--<script src="test.object.js"></script>
+  <script src="test.xhr.js"></script>-->
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+
+    var expect = chai.expect;
+
+  </script>
+</body>
+</html>
