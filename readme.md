@@ -1,3 +1,3 @@
 # Links
 
-[http://ricostacruz.com/cheatsheets/sinon.html](http://ricostacruz.com/cheatsheets/sinon.html)
+[https://devhints.io/sinon](https://devhints.io/sinon)
